@@ -1,0 +1,92 @@
+/*  Stylesheet for On The Job Binary Beats project
+    10/06/2024
+    Creating a visually appealing website for this project, aiming to provide a colorful experience for users.
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cdcccc;
+    margin: 0;
+    padding: 0;
+    font-family: "Tiny5", sans-serif;
+}
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; 
+}
+.title-container h1{
+    color: #7be4bb;
+    margin-left: 9%;
+}
+  
+  /* Style the navigation list */
+  nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Style individual list items */
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  /* Style the links */
+  nav ul li a {
+    text-decoration: none;
+    color: #7be4bb; 
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  nav ul li a:hover {
+    background-color: #555; 
+    border-radius: 5px;
+  }
+  
+  /* Hero content section */
+  .hero-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .hero-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .hero-content img {
+    display: block;  /* Makes the images behave like block elements */
+    margin: 10px auto; /* Centers the images horizontally and adds vertical margin */
+    width: 30%;  /* Adjust width as needed */
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+  
+  @media (max-width: 768px) {
+    .title-container {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    .hero-content img {
+      height: auto;
+      width: 100%; 
+    }
+  }
