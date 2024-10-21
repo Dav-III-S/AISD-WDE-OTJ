@@ -27,6 +27,10 @@ body {
     margin-left: 9%;
     font-size: 1.8em; /* Adjusted for better mobile readability */
 }
+.title-container img {
+    width: auto;
+    height: 3.0em;
+}
 
 /* Navigation menu */
 nav ul {
