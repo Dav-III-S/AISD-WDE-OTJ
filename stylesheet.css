@@ -8,7 +8,8 @@ body {
     background-color: #cdcccc;
     margin: 0;
     padding: 0;
-    font-family: "Tiny5", sans-serif;
+    font-family: "Tiny5", Arial, sans-serif;
+    line-height: 1.6;
 }
 
 /* Header title and navigation */
@@ -18,11 +19,13 @@ body {
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
+    box-shadow: 0 1em 1.5em rgba(0, 0, 0, 0.2);
 }
 
 .title-container h1 {
     color: #7be4bb;
     margin-left: 9%;
+    font-size: 1.8em; /* Adjusted for better mobile readability */
 }
 
 /* Navigation menu */
@@ -39,7 +42,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #7be4bb;
+    color: #fff;
     font-size: 1.2em;
     padding: 10px 15px;
     transition: background-color 0.3s ease;
@@ -60,13 +63,26 @@ nav ul li a:hover {
 .hero-content h2 {
     margin-bottom: 20px;
     text-align: center;
+    font-size: 2em; /* Larger font for visibility */
 }
 
-.hero-content img {
-    margin: 10px auto;
-    width: 30%;
-    max-width: 100%;
-    height: auto;
+/* Gallery section */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    gap: 1em; /* Space between images */
+}
+
+/* Simplified image styles */
+.gallery img {
+    width: 100%;
+    height: 30em; /* Reduced height for better mobile experience */
+    border-radius: 8px; /* Optional styling */
+    object-fit: cover; /* Ensure images cover area without distortion */
+}
+
+.image3 {
+    grid-column: span 2; /* Span two columns */
 }
 
 /* About Us section */
@@ -90,7 +106,6 @@ nav ul li a:hover {
 
 .about img {
     width: 50%;
-    max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
@@ -185,10 +200,12 @@ footer p {
 @media (max-width: 768px) {
     .title-container {
         flex-direction: column;
+        align-items: center; /* Center-align content for better mobile look */
     }
 
     nav ul {
         flex-direction: column;
+        text-align: center; /* Center-align menu items */
     }
 
     nav ul li {
@@ -196,9 +213,12 @@ footer p {
         margin-bottom: 10px;
     }
 
-    .hero-content img {
-        height: auto;
-        width: 100%;
+    .hero-content {
+        padding: 10px; /* Reduced padding for better fit */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5em; /* Reduce font size on mobile */
     }
 
     .about img {
@@ -207,5 +227,15 @@ footer p {
 
     .contact form input, .contact form textarea {
         width: 90%;
+    }
+
+    /* Gallery responsive layout */
+    .gallery {
+        grid-template-columns: 1fr; /* Switch to single-column layout */
+    }
+
+    .gallery img {
+        width: 100%; /* Ensure images stay responsive */
+        height: auto; /* Auto height for better scaling */
     }
 }
