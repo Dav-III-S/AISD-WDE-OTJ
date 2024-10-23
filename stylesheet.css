@@ -61,28 +61,30 @@ nav ul li a:hover {
 /* Hero content */
 .hero-content {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #d3d3d3;
 }
 
 .hero-content h2 {
-    margin-bottom: 20px;
+    margin-top: 0%;
+    margin-bottom: 25px;
     text-align: center;
-    font-size: 2em; /* Larger font for visibility */
+    font-size: 2.2em;
 }
 
 /* Gallery section */
 .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two-column layout */
-    gap: 1em; /* Space between images */
+    gap: .7em; /* Space between images */
 }
 
 /* Simplified image styles */
 .gallery img {
     width: 100%;
-    height: 30em; /* Reduced height for better mobile experience */
-    border-radius: 8px; /* Optional styling */
-    object-fit: cover; /* Ensure images cover area without distortion */
+    height: 30em;  
+    object-fit: cover; 
+    border: .6em solid #252525;
+    border-radius: 1em;
 }
 
 .image3 {
@@ -113,6 +115,8 @@ nav ul li a:hover {
     height: auto;
     display: block;
     margin: 20px auto;
+    border: .5em solid #252525;
+    border-radius: 2em;
 }
 
 /* Contact Us section */
